@@ -1,9 +1,16 @@
 body {
   margin: 0;
-  background: #575757;
+  background: #646464;
   color: #ececec;
   text-align: center;
   font-size: 16px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.main-wrapper{
+flex: 1;
+
 }
      a {
        text-decoration: none;
@@ -30,8 +37,8 @@ body {
  display: flex;
  justify-content: space-between;font-size: 16px;font-size: 16px;
  align-items: center;
- padding: 20px;
- margin-bottom: 75px;
+ padding: 10px;
+ margin-bottom: 59px;
  
 }
 .header-left {
@@ -45,14 +52,12 @@ body {
 .footer {
   background-color: rgba(241, 241, 241, 0.473);
   color: #e9e9e9;
-  position: absolute;
-  bottom: 0;
-  padding: 20px 0 20px 0;
   display: flex;
   width: 100%;
+  align-items: center;
+  margin: 0;
 }
 .title{
-  text-align: center;
   color:rgb(243, 68, 61);
   margin: 0;
   margin-right: 10px;
@@ -60,6 +65,8 @@ body {
 .title-sub{
   margin: 0;
   font-size: 14px;
+  color: #27ae60;
+  font-weight: 800;
 }
 .food{
   margin: 20px auto;

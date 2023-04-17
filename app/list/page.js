@@ -9,6 +9,7 @@ export default function List() {
       <div className="food">
         <h4>Product 2 $48</h4>
       </div>
+      <h4 className="">List of the products</h4>
     </div>
   );
 }

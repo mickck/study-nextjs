@@ -11,23 +11,24 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={nunito.className}>
       <body>
-        <header className="header">
-          <div className="header-left">
-            <h1 className="title">Tomato Fresh</h1>
-            <p className="title-sub">by {name}</p>
-          </div>
-          <div className="header-right">
-            <Link href="/">Home</Link>
-            &nbsp;
-            <Link href="/list">List</Link>
-          </div>
-        </header>
+        <div className="main-wrapper">
+          <header className="header">
+            <div className="header-left">
+              <h1 className="title">Tomato Fresh</h1>
+              <p className="title-sub">by {name}</p>
+            </div>
+            <div className="header-right">
+              <Link href="/">Home</Link>
+              <Link href="/list">List</Link>
+              <Link href="/cart">Cart</Link>
+            </div>
+          </header>
 
-        {children}
-
+          {children}
+        </div>
         <footer className="footer">
           <h4 className="title">Tomato Fresh Footer</h4>
-          <p className="title-sub">by {name} | Portfolio</p>
+          <p>by {name} | Portfolio</p>
         </footer>
       </body>
     </html>
